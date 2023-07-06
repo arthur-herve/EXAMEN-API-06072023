@@ -148,3 +148,18 @@ const examenGET = (req, res) => {
   
 };
 ```
+
+Question 11:
+
+On va chercher dans un objet au format JSON les données. Les requêtes on un format prédéfini et théoriquement universelles pour les API REST. On aura toujours à chercher aux toujours aux mêmes endroits le header, l'authentification et le tokenet le body. On va chercher dans le le corps les données que le client nous a envoyées. Normalement on est censé vérifier le contenu de multiples manières, ici je n'ai pas le temps de le faire.
+
+```javascript
+const examenPOST = (req, res) => {
+  try {
+    const body = req.body;
+    res.status(200).send(req.body);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+};
+```
