@@ -63,3 +63,13 @@ Je peux executer le code suivant aparaissant en console après avoir lancer `npm
 ```javascript
 console.log('hello world')
 ```
+
+ou encore :
+
+```javascript
+function addition(a, b) {
+  return a + b;
+}
+console.log(addition(5, 9));
+
+```
