@@ -89,3 +89,15 @@ Sachant que package-lock.json contient des informations très détaillées, je n
 Question 4:
 Express est une librairie ou framework en fonction des sources, qui permet de réaliser des applications web avec une première version en 2010. Elle est populaire pour ses performances, sa cohérence entre un frontend en javascript et un backend de même en javascript. (https://expressjs.com)
 Expressjs est utilisé dans le backend afin de gérer les requêtes et les réponses dans le cadre d'une API REST. Express se base sur node.js pour son fonctionnement. 
+
+Question 5:
+Pour initialiser un projet express on peut utiliser la commande suivante : `npx express-generator`. La commande installe les dépendances de base ainsi que les dossier génériques d'un projet express.
+Express va permettre de gérer une interface de communication entre terminaux. Elle récupère une requête au format http, elle traite cette requête via différentes étapes :
+On a les routes. Ce sont des fonctions qui récupère la requête si et seulement si celle-ci est au bon format (POST, GET, UPDATE, PUT ...) avec la bonne adresse. 
+Des middleware qui sont des fonctions faisant un prétraitement de la requêtes, ils vont tester l'authentification par exemple, la vérification du contenu de la requête. 
+Ensuite on aura les fonctions en elles-même qui sont contenues dans les controllers. Ces controllers qui vont pouvoir exécuter des requêtes auprès d'une base de données, ou plus simplement vers une autre API. Les controllers vont s'aider des model qui sont les formats des requêtes, SQL ou MongoDB par exemple. ENfin on a les views qui sont utilisées lorsque l'on doit renvoyer du contenu visuel pour les pages web.
+
+Les MVC soit le Model View Controller est une première birque des projets express. C'est ce que l'on a décrit plus haut avec le cheminement des requêtes avec les Controllers, les Models et les Views.
+
+Une deuxième brique de fonctionnement d'un projet express est le principe REST que l'on aborde dans la question suivante. 
+On pourra mettre en avant la caractéristique d'un projet Express qui est celle du stateless. Les terminaux ne doivent pas partager d'informations c'est une demande réponse executée avec un minimum d'information où le programme utilisant espress ne doit absolument pas stocker d'informations. Les configurations, les clefs chiffrage sont internes et ne sont pas partagées.
