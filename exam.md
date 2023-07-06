@@ -101,3 +101,10 @@ Les MVC soit le Model View Controller est une première birque des projets expre
 
 Une deuxième brique de fonctionnement d'un projet express est le principe REST que l'on aborde dans la question suivante. 
 On pourra mettre en avant la caractéristique d'un projet Express qui est celle du stateless. Les terminaux ne doivent pas partager d'informations c'est une demande réponse executée avec un minimum d'information où le programme utilisant espress ne doit absolument pas stocker d'informations. Les configurations, les clefs chiffrage sont internes et ne sont pas partagées.
+
+Question 6:
+Pour reprendre le cours, une API (pour Application Programming Interface) est une interface entre deux terminaux. Elle permet par exemple de récupérer les identifiants d'un utilisateur qui se connecte à Amazon sur son navigateur. Ce type d'API est ce qu'on appelle le backend d'une application web. Cette API fera dans ce cas là l'interface entre la base de données et le frontend de l'application. Pour payer sur Amazon en utilisant une carte bancaire, on passera par une API nous connectant à notre banque. Certaines applications permettront de récupérer des données de transports à l'aide de l'API de la sncf, la météo grâce à l'API de météo france et ainsi de suite. 
+Le principe REST (pour REpresentation State Transfer), est le standard de construction des APIs. Le rôle de ce standard est d'avoir une architecture cohérente, respectant une nomenclature globale. Cela comprend la forme des requêtes, le contenu de celles-ci, le type de requêtes... 
+Le principe est de créer une liste d'URI (pour Uniform Resource Identifier), comme des URLs. Cela permet d'avoir une référence à l'opération à effectuer, un GET avec une certaine URL demandera de récupérer et de renvoyer certaines données.
+mdn : (https://developer.mozilla.org/fr/docs/Glossary/URI)
+wikipédia : (https://fr.wikipedia.org/wiki/Representational_state_transfer)
