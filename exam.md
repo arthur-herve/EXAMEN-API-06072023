@@ -86,3 +86,6 @@ Dans package.json cela ajoute une dépendance telle que :
 Sachant que package-lock.json contient des informations très détaillées, je ne vais pas montrer son contenu.
 
 
+Question 4:
+Express est une librairie ou framework en fonction des sources, qui permet de réaliser des applications web avec une première version en 2010. Elle est populaire pour ses performances, sa cohérence entre un frontend en javascript et un backend de même en javascript. (https://expressjs.com)
+Expressjs est utilisé dans le backend afin de gérer les requêtes et les réponses dans le cadre d'une API REST. Express se base sur node.js pour son fonctionnement. 
