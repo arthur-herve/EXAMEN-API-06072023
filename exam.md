@@ -73,3 +73,16 @@ function addition(a, b) {
 console.log(addition(5, 9));
 
 ```
+Question 3:
+Pour utiliser express, il faut l'installer à l'aide de la commande `npm install express`. Cette commande ajoute un module dans node_modules, met à jour package.json et package-lock.json.
+Dans package.json cela ajoute une dépendance telle que :
+
+```javascript
+"dependencies": {
+    "express": "^4.18.2"
+  }
+```
+
+Sachant que package-lock.json contient des informations très détaillées, je ne vais pas montrer son contenu.
+
+
