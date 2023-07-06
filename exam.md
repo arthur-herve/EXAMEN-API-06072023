@@ -114,3 +114,37 @@ La modification a déjà été faite à la question d'avant.
 
 Question 8:
 Une Promise est une valeur retournée de manière asynchrone. Lors de l'execution d'un code Javascript il est parfois nécessaire de forcer une asynchronie lorsque des éléments du programmes doivent absolument récupérer une valeur. Par exemble une requête à la BDD peut prendre du temps et il est nécessaire de récupérer les informations valides ou l'erreur avant de continuer l'exécution du programme.
+
+Question 9 : 
+C'est déjà fait question  3 (2 sans le nom et prénom) Pour un peu plus de détail, ce module facilite le travail du développeur en rechargeant automatiquement le code sans avoir à relancer manuellement l'application.
+
+Question 10 : 
+Avec le try catch.
+Avec le try catch.
+```javascript
+  try {
+    const unNombre = 2;
+    if (unNombre === 2) {
+      throw TypeError.name;
+    }
+  } catch (error) {
+    console.log(error);
+  }
+```
+Ici j'ai posé un faux problème qui renvoie une erreur TypeError, ce sont des erreurs qui s'affichent quand il y a un conflit de type, c'est utilisé en typescript.
+
+On pourra l'utiliser pour renvoyer une erreur au client : 
+```javascript
+const examenGET = (req, res) => {
+  try {
+    const unNombre = 2;
+    if (unNombre === 2) {
+      throw TypeError.name;
+    }
+    res.status(200).send(htmlExamenPage);
+  } catch (error) {
+    res.status(400).send('unNombre !== 2');
+  }
+  
+};
+```
