@@ -111,3 +111,6 @@ wikipédia : (https://fr.wikipedia.org/wiki/Representational_state_transfer)
 
 Question 7:
 La modification a déjà été faite à la question d'avant.
+
+Question 8:
+Une Promise est une valeur retournée de manière asynchrone. Lors de l'execution d'un code Javascript il est parfois nécessaire de forcer une asynchronie lorsque des éléments du programmes doivent absolument récupérer une valeur. Par exemble une requête à la BDD peut prendre du temps et il est nécessaire de récupérer les informations valides ou l'erreur avant de continuer l'exécution du programme.
