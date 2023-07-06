@@ -108,3 +108,6 @@ Le principe REST (pour REpresentation State Transfer), est le standard de constr
 Le principe est de créer une liste d'URI (pour Uniform Resource Identifier), comme des URLs. Cela permet d'avoir une référence à l'opération à effectuer, un GET avec une certaine URL demandera de récupérer et de renvoyer certaines données.
 mdn : (https://developer.mozilla.org/fr/docs/Glossary/URI)
 wikipédia : (https://fr.wikipedia.org/wiki/Representational_state_transfer)
+
+Question 7:
+La modification a déjà été faite à la question d'avant.
